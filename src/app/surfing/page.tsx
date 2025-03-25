@@ -28,7 +28,7 @@ const surfGallery = [
     caption: "A fun day on the Northern Beaches",
   },
   {
-    src: "/images/beach1.JPG",
+    src: "/images/beach1.jpg",
     caption: "Just another day at my local — The Bra",
   },
 ];
