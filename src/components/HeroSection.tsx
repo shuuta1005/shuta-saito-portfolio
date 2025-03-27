@@ -42,8 +42,8 @@ export default function HeroSection() {
         <Text fontSize={{ base: "md", md: "xl" }} maxW="3xl">
           I&apos;m a web developer who’s passionate about surfing,
           skateboarding, and exploring the world — both online and off. I love
-          meaningful digital experiences that reflect the same creativity and
-          flow I chase in everyday life.
+          building meaningful digital experiences that reflect the same
+          creativity and flow I chase in everyday life.
         </Text>
       </VStack>
     </Box>
