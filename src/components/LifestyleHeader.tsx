@@ -29,7 +29,7 @@ export default function LifestyleHeader({ title, quote, icon }: Props) {
           aria-label="Back to home"
           variant="ghost"
           color="white"
-          fontSize="2xl"
+          fontSize="4xl"
           _hover={{
             transform: "scale(1.1)",
             backgroundColor: "teal.600",

@@ -36,11 +36,7 @@ const surfGallery = [
 export default function SurfingPage() {
   return (
     <Box px={8} py={15} maxW="6xl" mx="auto">
-      <LifestyleHeader
-        title="Surfing"
-        quote="Out there, everything makes sense again."
-        icon={<GiWaveCrest />}
-      />
+      <LifestyleHeader title="Surfing" quote="" icon={<GiWaveCrest />} />
 
       <SimpleGrid columns={1} spacing={10}>
         {surfGallery.map((photo, i) => (

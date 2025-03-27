@@ -45,10 +45,10 @@ export default function AboutSection() {
           <VStack spacing={4} align="start">
             <Heading size="xl">About Me</Heading>
             <Text fontSize="lg" color="gray.600">
-              Hey! I&apos;m Shuta — a web & mobile developer who&apos;s just as
-              stoked on clean UI as I am on clean waves. I got into coding
-              because I love building things, and I’ve stuck with it because it
-              lets me combine creativity, logic, and problem-solving.
+              Hey! I&apos;m Shuta — a web developer who&apos;s just as stoked on
+              clean UI as I am on clean waves. I got into coding because I love
+              building things, and I’ve stuck with it because it lets me combine
+              creativity, logic, and problem-solving.
             </Text>
             <Text fontSize="lg" color="gray.600">
               When I&apos;m not building apps, you&apos;ll find me at the beach

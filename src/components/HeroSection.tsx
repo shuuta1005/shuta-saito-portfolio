@@ -40,8 +40,10 @@ export default function HeroSection() {
           Hey, I&apos;m Shuta 👋
         </Heading>
         <Text fontSize={{ base: "md", md: "xl" }} maxW="3xl">
-          I&apos;m a web & mobile developer who loves surfing, clean UI, and
-          building real-world digital experiences. Welcome to my portfolio!
+          I&apos;m a web developer who’s passionate about surfing,
+          skateboarding, and exploring the world — both online and off. I love
+          meaningful digital experiences that reflect the same creativity and
+          flow I chase in everyday life.
         </Text>
       </VStack>
     </Box>
