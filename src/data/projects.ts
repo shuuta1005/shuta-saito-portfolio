@@ -10,21 +10,22 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "Pig Game",
-    description: "A dice game built with vanilla HTML, CSS, and JavaScript.",
-    image: "/images/pigGame.jpg",
-    github: "https://github.com/shuuta1005/pig-game",
-    live: "https://shuuta1005.github.io/pig-game/",
-    category: "Game",
+    title: "Bra Fotos",
+    description: "Still in development... surf photo marketplace project.",
+    image: "/images/bra-fotos.jpg",
+    github: "https://github.com/shuuta1005/surf-foto-mp-v1",
+    live: "https://www.surfphotosjapan.com/",
+    category: "Full-Stack",
   },
-  {
-    title: "Guess My Number",
-    description: "A simple number guessing game using JavaScript logic.",
-    image: "/images/guessMyNum.jpg",
-    github: "https://github.com/shuuta1005/guess-my-number",
-    live: "https://shuuta1005.github.io/guess-my-number/",
-    category: "Game",
-  },
+
+  // {
+  //   title: "Guess My Number",
+  //   description: "A simple number guessing game using JavaScript logic.",
+  //   image: "/images/guessMyNum.jpg",
+  //   github: "https://github.com/shuuta1005/guess-my-number",
+  //   live: "https://shuuta1005.github.io/guess-my-number/",
+  //   category: "Game",
+  // },
   {
     title: "Simon Game",
     description: "A memory-based game inspired by the classic Simon game.",
@@ -34,13 +35,21 @@ export const projects: Project[] = [
     category: "Game",
   },
   {
-    title: "Blog App",
-    description:
-      "Blog app built with Node.js, Express, and EJS. View README for usage.",
-    image: "/images/blog-app.png",
-    github: "https://github.com/shuuta1005/my-blog-app",
-    category: "Full-Stack",
+    title: "Pig Game",
+    description: "A dice game built with vanilla HTML, CSS, and JavaScript.",
+    image: "/images/pigGame.jpg",
+    github: "https://github.com/shuuta1005/pig-game",
+    live: "https://shuuta1005.github.io/pig-game/",
+    category: "Game",
   },
+  // {
+  //   title: "Blog App",
+  //   description:
+  //     "Blog app built with Node.js, Express, and EJS. View README for usage.",
+  //   image: "/images/blog-app.png",
+  //   github: "https://github.com/shuuta1005/my-blog-app",
+  //   category: "Full-Stack",
+  // },
   {
     title: "Book Note App",
     description:
@@ -56,13 +65,5 @@ export const projects: Project[] = [
     image: "/images/album-search-app.jpeg",
     github: "https://github.com/shuuta1005/musica-list",
     category: "Frontend",
-  },
-  {
-    title: "Bra Fotos",
-    description: "Still in development... surf photo marketplace project.",
-    image: "/images/bra-fotos.jpg",
-    github: "https://github.com/shuuta1005/surf-foto-mp-v1",
-    live: "https://surf-foto-mp-v1.vercel.app/",
-    category: "Full-Stack",
   },
 ];

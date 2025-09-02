@@ -3,7 +3,7 @@ import { Providers } from "@/lib/providers";
 import { ReactNode } from "react";
 
 export const metadata = {
-  title: "My Portfolio",
+  title: "Shuta Saito Portfolio",
   description: "Built with Next.js and Chakra UI",
 };
 

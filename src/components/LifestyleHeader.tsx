@@ -36,8 +36,8 @@ export default function LifestyleHeader({ title, quote, icon }: Props) {
           }}
         />
         <Heading
-          size="lg"
-          color="teal.50"
+          size="2xl"
+          color="white"
           letterSpacing="tight"
           textShadow="1px 1px 2px rgba(0,0,0,0.1)"
         >
