@@ -15,12 +15,12 @@ export default function ProjectsSection() {
           project is a small expression of what I love to create.
         </Text>
       </VStack>
-      {/* 
+
       <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={8}>
         {projects.map((project) => (
           <ProjectCard key={project.title} project={project} />
         ))}
-      </SimpleGrid> */}
+      </SimpleGrid>
     </Box>
   );
 }
