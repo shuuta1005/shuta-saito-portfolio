@@ -104,6 +104,9 @@ export const surfGallery = [
   {
     src: "/surf-gallery/surf-image-28.jpg",
   },
+  {
+    src: "/surf-gallery/surf-image-29.jpg",
+  },
 ];
 
 export const skateGallery = [
@@ -167,22 +170,85 @@ export const skateGallery = [
   {
     src: "/skate-gallery/skate-image-21.jpg",
   },
+  // {
+  //   src: "/skate-gallery/skate-image-22.jpg",
+  // },
+  // {
+  //   src: "/skate-gallery/skate-image-23.jpg",
+  // },
+  // {
+  //   src: "/skate-gallery/skate-image-24.jpg",
+  // },
+  // {
+  //   src: "/skate-gallery/skate-image-25.jpg",
+  // },
+  // {
+  //   src: "/skate-gallery/skate-image-26.jpg",
+  // },
+  // {
+  //   src: "/skate-gallery/skate-image-27.jpg",
+  // },
+];
+
+export const artGallery = [
   {
-    src: "/skate-gallery/skate-image-22.jpg",
+    src: "/art-gallery/art-image-1.png",
   },
   {
-    src: "/skate-gallery/skate-image-23.jpg",
+    src: "/art-gallery/art-image-2.png",
   },
   {
-    src: "/skate-gallery/skate-image-24.jpg",
+    src: "/art-gallery/art-image-3.png",
   },
   {
-    src: "/skate-gallery/skate-image-25.jpg",
+    src: "/art-gallery/art-image-4.png",
   },
   {
-    src: "/skate-gallery/skate-image-26.jpg",
+    src: "/art-gallery/art-image-5.png",
   },
   {
-    src: "/skate-gallery/skate-image-27.jpg",
+    src: "/art-gallery/art-image-6.png",
   },
+  {
+    src: "/art-gallery/art-image-7.png",
+  },
+  {
+    src: "/art-gallery/art-image-8.png",
+  },
+  {
+    src: "/art-gallery/art-image-9.png",
+  },
+  {
+    src: "/art-gallery/art-image-10.png",
+  },
+  {
+    src: "/art-gallery/art-image-11.png",
+  },
+  {
+    src: "/art-gallery/art-image-12.png",
+  },
+  {
+    src: "/art-gallery/art-image-13.png",
+  },
+  {
+    src: "/art-gallery/art-image-14.png",
+  },
+  {
+    src: "/art-gallery/art-image-15.png",
+  },
+  // {
+  //   src: "/art-gallery/art-image-16.png",
+  // },
+  // {
+  //   src: "/art-gallery/art-image-17.png",
+  // },
+  // {
+  //   src: "/art-gallery/art-image-18.png",
+  // },
+  // {
+  //   src: "/art-gallery/art-image-19.png",
+  // },
+  // {
+  //   src: "/art-gallery/art-image-20.png",
+  // },
 ];

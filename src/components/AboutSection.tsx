@@ -90,7 +90,7 @@ export default function AboutSection() {
           <VStack
             spacing={2}
             as={Link}
-            href="/traveling"
+            href="/art"
             _hover={{ textDecoration: "none" }}
           >
             <Icon as={GiWorld} boxSize={10} color="gray.800" />
