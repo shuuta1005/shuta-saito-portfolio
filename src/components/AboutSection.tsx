@@ -31,7 +31,7 @@ export default function AboutSection() {
         {/* Image */}
         <Box flex="1">
           <Image
-            src="/images/about-me.jpg" // 👈 add your image to /public folder
+            src="/images/about-me.jpg" //
             alt="Shuta surfing"
             borderRadius="lg"
             objectFit="cover"
@@ -69,9 +69,9 @@ export default function AboutSection() {
             href="/surfing"
             _hover={{ textDecoration: "none" }}
           >
-            <Icon as={GiWaveSurfer} boxSize={10} color="teal.500" />
-            <Text fontWeight="semibold" color="gray.700">
-              Surfing
+            <Icon as={GiWaveSurfer} boxSize={10} color="gray.800" />
+            <Text fontWeight="bold" color="gray.800">
+              Surf
             </Text>
           </VStack>
 
@@ -81,9 +81,9 @@ export default function AboutSection() {
             href="/skating"
             _hover={{ textDecoration: "none" }}
           >
-            <Icon as={GiSkateboard} boxSize={10} color="teal.500" />
-            <Text fontWeight="semibold" color="gray.700">
-              Skating
+            <Icon as={GiSkateboard} boxSize={10} color="gray.800" />
+            <Text fontWeight="bold" color="gray.800">
+              Skate
             </Text>
           </VStack>
 
@@ -93,9 +93,9 @@ export default function AboutSection() {
             href="/traveling"
             _hover={{ textDecoration: "none" }}
           >
-            <Icon as={GiWorld} boxSize={10} color="teal.500" />
-            <Text fontWeight="semibold" color="gray.700">
-              Traveling
+            <Icon as={GiWorld} boxSize={10} color="gray.800" />
+            <Text fontWeight="bold" color="gray.800">
+              Art
             </Text>
           </VStack>
         </SimpleGrid>

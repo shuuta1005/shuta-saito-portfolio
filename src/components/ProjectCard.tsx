@@ -40,7 +40,7 @@ export default function ProjectCard({ project }: Props) {
               rel="noopener noreferrer"
               size="sm"
               variant="outline"
-              colorScheme="teal"
+              colorScheme="gray"
             >
               GitHub
             </Button>
@@ -52,7 +52,7 @@ export default function ProjectCard({ project }: Props) {
               target="_blank"
               rel="noopener noreferrer"
               size="sm"
-              colorScheme="teal"
+              colorScheme="gray"
             >
               Live
             </Button>

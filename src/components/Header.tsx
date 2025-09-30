@@ -26,8 +26,8 @@ export default function Header() {
       top={0}
       zIndex={10}
       borderBottom="1px"
-      borderColor="blue.100"
-      backgroundColor="teal.800"
+      borderColor="black"
+      backgroundColor="gray.900"
     >
       <Flex
         align="center"
@@ -40,12 +40,12 @@ export default function Header() {
             <Icon
               as={GiWaveCrest}
               boxSize={10}
-              color="blue.100"
+              color="blue.50"
               filter="drop-shadow(0 2px 4px rgba(0,0,0,0.2))"
               transition="all 0.3s ease"
               _hover={{
                 transform: "rotate(10deg) scale(1.1)",
-                color: "blue.50",
+                color: "white",
               }}
             />
           </Tooltip>
@@ -71,7 +71,7 @@ export default function Header() {
                 key={item.href}
                 as={NextLink}
                 href={item.href}
-                fontWeight="semibold"
+                fontWeight="bold"
                 color="whiteAlpha.900"
                 position="relative"
                 _hover={{

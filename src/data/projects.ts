@@ -34,14 +34,14 @@ export const projects: Project[] = [
     live: "https://shuuta1005.github.io/simon-game/",
     category: "Game",
   },
-  {
-    title: "Pig Game",
-    description: "A dice game built with vanilla HTML, CSS, and JavaScript.",
-    image: "/images/pigGame.jpg",
-    github: "https://github.com/shuuta1005/pig-game",
-    live: "https://shuuta1005.github.io/pig-game/",
-    category: "Game",
-  },
+  // {
+  //   title: "Pig Game",
+  //   description: "A dice game built with vanilla HTML, CSS, and JavaScript.",
+  //   image: "/images/pigGame.jpg",
+  //   github: "https://github.com/shuuta1005/pig-game",
+  //   live: "https://shuuta1005.github.io/pig-game/",
+  //   category: "Game",
+  // },
   // {
   //   title: "Blog App",
   //   description:

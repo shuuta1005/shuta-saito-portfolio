@@ -20,7 +20,7 @@ export default function ContactSection() {
     >
       <VStack spacing={6}>
         <VStack spacing={2}>
-          <Icon as={GiYinYang} boxSize={20} color="teal.500" />
+          <Icon as={GiYinYang} boxSize={20} color="gray.600" />
           <Heading size="xl">Contact</Heading>
         </VStack>
 
@@ -32,8 +32,8 @@ export default function ContactSection() {
         <Link
           href="mailto:your-email@example.com"
           fontSize="lg"
-          color="teal.500"
-          _hover={{ textDecoration: "underline", color: "teal.600" }}
+          color="gray.600"
+          _hover={{ textDecoration: "underline", color: "gray.800" }}
         >
           <Icon as={FaEnvelope} mr={2} />
           shutafute26@gmail.com
