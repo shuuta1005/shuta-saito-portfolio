@@ -1,9 +1,10 @@
-import { Box, Text, Image, SimpleGrid, Fade } from "@chakra-ui/react";
+"use client";
+
+import { Box, Image, Fade } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
 type PhotoGallery = {
   src: string;
-  caption: string;
 }[];
 
 export default function SurfPhotoGallery({
@@ -12,69 +13,43 @@ export default function SurfPhotoGallery({
   surfGallery: PhotoGallery;
 }) {
   return (
-    <SimpleGrid
-      columns={[1, 1, 2]}
-      spacing={[6, 8, 10]}
-      px={[4, 6, 8]}
+    <Box
       maxW="container.xl"
       mx="auto"
+      px={[4, 6, 8]}
+      sx={{
+        columnCount: [1, 2, 3], // responsive: 1 col mobile, 2 tablet, 3 desktop
+        columnGap: "1.5rem",
+      }}
     >
       {surfGallery.map((photo, i) => (
         <Fade in key={i}>
           <Box
             as={motion.div}
-            whileHover={{ scale: 1.02 }}
+            mb="1.5rem"
             borderRadius="xl"
             overflow="hidden"
-            boxShadow="lg"
-            bg="white"
-            position="relative"
-            border="1px solid"
-            borderColor="gray.100"
+            boxShadow="md"
+            whileHover={{ scale: 1.03 }}
+            sx={{
+              breakInside: "avoid", // important: prevents image cuts
+            }}
           >
-            <Box
-              position="relative"
-              w="full"
-              h="400px" // Fixed height
-              display="flex"
-              justifyContent="center"
-              alignItems="center"
-              bg="gray.100"
-              overflow="hidden"
-            >
-              <Image
-                src={photo.src}
-                alt={`Surf photo ${i + 1}`}
-                objectFit="contain"
-                maxW="full"
-                maxH="full"
-                w="auto"
-                h="auto"
-                transition="transform 0.3s ease"
-                _hover={{
-                  transform: "scale(1.02)",
-                }}
-              />
-            </Box>
-            <Box
-              p={[4, 5, 6]}
-              bg="gray.50"
-              borderTop="1px solid"
-              borderColor="gray.100"
-            >
-              <Text
-                color="gray.800"
-                fontSize={["md", "lg", "xl"]}
-                fontWeight="medium"
-                lineHeight="tall"
-                textAlign="center"
-              >
-                {photo.caption}
-              </Text>
-            </Box>
+            <Image
+              src={photo.src}
+              alt={`Surf photo ${i + 1}`}
+              w="100%"
+              h="auto"
+              objectFit="cover"
+              transition="transform 0.4s ease"
+              _hover={{
+                transform: "scale(1.05)",
+                boxShadow: "xl",
+              }}
+            />
           </Box>
         </Fade>
       ))}
-    </SimpleGrid>
+    </Box>
   );
 }
