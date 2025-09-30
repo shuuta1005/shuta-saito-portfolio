@@ -35,7 +35,14 @@ export default function Header() {
         maxW="container.xl"
         mx="auto"
       >
-        <Flex align="center" gap={4}>
+        {/* Logo + Name → Home */}
+        <Flex
+          as={NextLink}
+          href="/"
+          align="center"
+          gap={4}
+          _hover={{ textDecoration: "none" }}
+        >
           <Tooltip label="Shuta Saito's Portfolio" hasArrow>
             <Icon
               as={GiWaveCrest}
@@ -60,12 +67,13 @@ export default function Header() {
           </Heading>
         </Flex>
 
+        {/* Navigation */}
         {showNavLinks && (
           <HStack spacing={10}>
             {[
-              { href: "#about", label: "About Me" },
-              { href: "#projects", label: "Projects" },
-              { href: "#contact", label: "Contact" },
+              { href: "/#about", label: "About Me" },
+              { href: "/#projects", label: "Projects" },
+              { href: "/#contact", label: "Contact" },
             ].map((item) => (
               <Link
                 key={item.href}

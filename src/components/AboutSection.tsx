@@ -53,7 +53,7 @@ export default function AboutSection() {
             <Text fontSize="lg" color="gray.600">
               When I&apos;m not building apps, you&apos;ll find me at the beach
               surfing, skating bowls, or exploring new places. I try to live
-              simply, stay curious, and create things that people genuinely
+              actively, stay curious, and create things that people genuinely
               enjoy using.
             </Text>
           </VStack>
