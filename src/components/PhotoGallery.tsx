@@ -1,28 +1,26 @@
+//components/PhotoGallery.tsx
+
 "use client";
 
 import { Box, Image, Fade } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
-type PhotoGallery = {
+export type Photo = {
   src: string;
-}[];
+};
 
-export default function SurfPhotoGallery({
-  surfGallery,
-}: {
-  surfGallery: PhotoGallery;
-}) {
+export default function PhotoGallery({ photos }: { photos: Photo[] }) {
   return (
     <Box
       maxW="container.xl"
       mx="auto"
       px={[4, 6, 8]}
       sx={{
-        columnCount: [1, 2, 3], // responsive: 1 col mobile, 2 tablet, 3 desktop
+        columnCount: [1, 2, 3], // responsive
         columnGap: "1.5rem",
       }}
     >
-      {surfGallery.map((photo, i) => (
+      {photos.map((photo, i) => (
         <Fade in key={i}>
           <Box
             as={motion.div}
@@ -31,13 +29,11 @@ export default function SurfPhotoGallery({
             overflow="hidden"
             boxShadow="md"
             whileHover={{ scale: 1.03 }}
-            sx={{
-              breakInside: "avoid", // important: prevents image cuts
-            }}
+            sx={{ breakInside: "avoid" }}
           >
             <Image
               src={photo.src}
-              alt={`Surf photo ${i + 1}`}
+              alt={`Photo ${i + 1}`}
               w="100%"
               h="auto"
               objectFit="cover"
