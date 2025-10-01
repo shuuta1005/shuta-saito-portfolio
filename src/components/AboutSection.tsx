@@ -13,7 +13,12 @@ import {
   Link,
 } from "@chakra-ui/react";
 
-import { GiWaveSurfer, GiSkateboard, GiWorld } from "react-icons/gi";
+import {
+  GiWaveSurfer,
+  GiSkateboard,
+  GiWorld,
+  GiGooeyEyedSun,
+} from "react-icons/gi";
 
 export default function AboutSection() {
   return (
@@ -61,45 +66,50 @@ export default function AboutSection() {
       </Flex>
 
       {/* Lifestyle icons */}
-      <Box mt={12}>
-        <SimpleGrid columns={{ base: 1, sm: 3 }} spacing={8} textAlign="center">
-          <VStack
-            spacing={2}
-            as={Link}
-            href="/surfing"
-            _hover={{ textDecoration: "none" }}
-          >
-            <Icon as={GiWaveSurfer} boxSize={10} color="gray.800" />
-            <Text fontWeight="bold" color="gray.800">
-              Surf
-            </Text>
-          </VStack>
+<Box mt={12}>
+  <SimpleGrid
+    columns={{ base: 2, sm: 2, md: 4 }} // 👈 ensures 4 across on medium+ screens
+    spacing={8}
+    textAlign="center"
+  >
+    {[
+      { href: "/surfing", label: "Surf", icon: GiWaveSurfer },
+      { href: "/skating", label: "Skate", icon: GiSkateboard },
+      { href: "/art", label: "Art", icon: GiGooeyEyedSun },
+      { href: "/travel", label: "Travel", icon: GiWorld },
+    ].map((item) => (
+      <VStack
+        key={item.href}
+        spacing={2}
+        as={Link}
+        href={item.href}
+        _hover={{ textDecoration: "none" }}
+        transition="all 0.3s ease"
+      >
+        <Icon
+          as={item.icon}
+          boxSize={12}
+          color="gray.800"
+          transition="all 0.3s ease"
+          _hover={{
+            transform: "scale(1.2) rotate(5deg)",
+            color: "red.300",
+            filter: "drop-shadow(0px 4px 6px rgba(0,0,0,0.2))",
+          }}
+        />
+        <Text
+          fontWeight="bold"
+          color="gray.800"
+          transition="color 0.3s ease"
+          _hover={{ color: "red.700" }}
+        >
+          {item.label}
+        </Text>
+      </VStack>
+    ))}
+  </SimpleGrid>
+</Box>
 
-          <VStack
-            spacing={2}
-            as={Link}
-            href="/skating"
-            _hover={{ textDecoration: "none" }}
-          >
-            <Icon as={GiSkateboard} boxSize={10} color="gray.800" />
-            <Text fontWeight="bold" color="gray.800">
-              Skate
-            </Text>
-          </VStack>
-
-          <VStack
-            spacing={2}
-            as={Link}
-            href="/art"
-            _hover={{ textDecoration: "none" }}
-          >
-            <Icon as={GiWorld} boxSize={10} color="gray.800" />
-            <Text fontWeight="bold" color="gray.800">
-              Art
-            </Text>
-          </VStack>
-        </SimpleGrid>
-      </Box>
     </Box>
   );
 }

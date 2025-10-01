@@ -114,6 +114,9 @@ export const skateGallery = [
     src: "/skate-gallery/skate-image-1.jpg",
   },
   {
+    src: "/skate-gallery/skate-image-2.jpg",
+  },
+  {
     src: "/skate-gallery/skate-image-3.jpg",
   },
   {
@@ -170,9 +173,9 @@ export const skateGallery = [
   {
     src: "/skate-gallery/skate-image-21.jpg",
   },
-  // {
-  //   src: "/skate-gallery/skate-image-22.jpg",
-  // },
+  {
+    src: "/skate-gallery/skate-image-22.jpg",
+  },
   // {
   //   src: "/skate-gallery/skate-image-23.jpg",
   // },
@@ -236,9 +239,9 @@ export const artGallery = [
   {
     src: "/art-gallery/art-image-15.png",
   },
-  // {
-  //   src: "/art-gallery/art-image-16.png",
-  // },
+  {
+    src: "/art-gallery/art-image-16.png",
+  },
   // {
   //   src: "/art-gallery/art-image-17.png",
   // },
@@ -250,5 +253,68 @@ export const artGallery = [
   // },
   // {
   //   src: "/art-gallery/art-image-20.png",
+  // },
+];
+
+export const travelGallery = [
+  {
+    src: "/travel-gallery/travel-image-1.jpg",
+  },
+  {
+    src: "/travel-gallery/travel-image-2.jpg",
+  },
+  {
+    src: "/travel-gallery/travel-image-3.jpg",
+  },
+  {
+    src: "/travel-gallery/travel-image-4.jpg",
+  },
+  {
+    src: "/travel-gallery/travel-image-5.jpg",
+  },
+  {
+    src: "/travel-gallery/travel-image-6.jpg",
+  },
+  {
+    src: "/travel-gallery/travel-image-7.jpg",
+  },
+  {
+    src: "/travel-gallery/travel-image-8.jpg",
+  },
+  {
+    src: "/travel-gallery/travel-image-9.jpg",
+  },
+  {
+    src: "/travel-gallery/travel-image-10.jpg",
+  },
+  {
+    src: "/travel-gallery/travel-image-11.jpg",
+  },
+  {
+    src: "/travel-gallery/travel-image-12.jpg",
+  },
+  {
+    src: "/travel-gallery/travel-image-13.jpg",
+  },
+  {
+    src: "/travel-gallery/travel-image-14.jpg",
+  },
+  {
+    src: "/travel-gallery/travel-image-15.jpg",
+  },
+  // {
+  //   src: "/travel-gallery/travel-image-16.jpg",
+  // },
+  {
+    src: "/travel-gallery/travel-image-17.jpg",
+  },
+  // {
+  //   src: "/travel-gallery/travel-image-18.jpg",
+  // },
+  // {
+  //   src: "/travel-gallery/travel-image-19.jpg",
+  // },
+  // {
+  //   src: "/travel-gallery/travel-image-20.jpg",
   // },
 ];

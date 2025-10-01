@@ -4,13 +4,13 @@ import { Box } from "@chakra-ui/react";
 // import { GiWaveCrest } from "react-icons/gi";
 // import LifestyleHeader from "@/components/LifestyleHeader";
 import PhotoGallery from "../../components/PhotoGallery";
-import { surfGallery } from "@/data/photoGallery";
+import { travelGallery } from "@/data/photoGallery";
 
-export default function SurfingPage() {
+export default function TravelPage() {
   return (
     <Box px={8} py={15} mx="auto">
       {/* <LifestyleHeader title="Surfing" quote="" icon={<GiWaveCrest />} /> */}
-      <PhotoGallery photos={surfGallery} />
+      <PhotoGallery photos={travelGallery} />
     </Box>
   );
 }
