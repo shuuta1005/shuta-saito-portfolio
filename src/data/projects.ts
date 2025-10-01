@@ -1,4 +1,5 @@
 // src/data/projects.ts
+
 export type Project = {
   title: string;
   description: string;
@@ -6,26 +7,37 @@ export type Project = {
   github?: string;
   live?: string;
   category?: "Game" | "Full-Stack" | "Frontend" | "Other";
+  tech?: string[]; // optional list of technologies
+  features?: string[]; // optional short feature highlights
 };
 
 export const projects: Project[] = [
   {
-    title: "Bra Fotos",
-    description: "Still in development... surf photo marketplace project.",
-    image: "/images/bra-fotos.jpg",
+    title: "BrahFotos",
+    description:
+      "BrahFotos is a full-stack e-commerce platform for selling surf photography as digital products. It combines secure auth, tiered cart/checkout logic, an admin gallery upload system, and reliable delivery of purchased photos.",
+    image: "/images/brahfotos-cover.jpg",
     github: "https://github.com/shuuta1005/surf-foto-mp-v1",
     live: "https://www.surfphotosjapan.com/",
     category: "Full-Stack",
+    tech: [
+      "Next.js (App Router)",
+      "React",
+      "Tailwind CSS",
+      "Radix UI",
+      "Lucide React",
+      "Prisma",
+      "PostgreSQL",
+      "NextAuth",
+      "Stripe (Checkout + Webhooks)",
+      "Resend API (email)",
+      "Vercel Blob Storage",
+      "Sharp",
+      "Zod",
+    ],
+    features: [],
   },
 
-  // {
-  //   title: "Guess My Number",
-  //   description: "A simple number guessing game using JavaScript logic.",
-  //   image: "/images/guessMyNum.jpg",
-  //   github: "https://github.com/shuuta1005/guess-my-number",
-  //   live: "https://shuuta1005.github.io/guess-my-number/",
-  //   category: "Game",
-  // },
   {
     title: "Simon Game",
     description: "A memory-based game inspired by the classic Simon game.",
@@ -33,23 +45,14 @@ export const projects: Project[] = [
     github: "https://github.com/shuuta1005/simon-game",
     live: "https://shuuta1005.github.io/simon-game/",
     category: "Game",
+    tech: ["HTML", "CSS", "JavaScript"],
+    features: [
+      "Interactive memory challenge",
+      "Dynamic game logic with increasing difficulty",
+      "Clean and responsive UI",
+    ],
   },
-  // {
-  //   title: "Pig Game",
-  //   description: "A dice game built with vanilla HTML, CSS, and JavaScript.",
-  //   image: "/images/pigGame.jpg",
-  //   github: "https://github.com/shuuta1005/pig-game",
-  //   live: "https://shuuta1005.github.io/pig-game/",
-  //   category: "Game",
-  // },
-  // {
-  //   title: "Blog App",
-  //   description:
-  //     "Blog app built with Node.js, Express, and EJS. View README for usage.",
-  //   image: "/images/blog-app.png",
-  //   github: "https://github.com/shuuta1005/my-blog-app",
-  //   category: "Full-Stack",
-  // },
+
   {
     title: "Book Note App",
     description:
@@ -57,7 +60,14 @@ export const projects: Project[] = [
     image: "/images/book-note-app.png",
     github: "https://github.com/shuuta1005/book-notes",
     category: "Full-Stack",
+    tech: ["Node.js", "Express", "PostgreSQL", "OAuth", "Bootstrap"],
+    features: [
+      "Google login integration",
+      "Add, edit, and delete book notes",
+      "Responsive design for all devices",
+    ],
   },
+
   {
     title: "Album Search & Rate",
     description:
@@ -65,5 +75,11 @@ export const projects: Project[] = [
     image: "/images/album-search-app.jpeg",
     github: "https://github.com/shuuta1005/musica-list",
     category: "Frontend",
+    tech: ["React", "Vite", "Spotify API", "CSS Modules"],
+    features: [
+      "Search albums directly from Spotify API",
+      "Rate albums and save preferences",
+      "Fast and lightweight Vite setup",
+    ],
   },
 ];
