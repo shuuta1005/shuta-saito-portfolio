@@ -26,6 +26,11 @@ import Footer from "@/components/Footer";
 export const metadata = {
   title: "Shuta Saito Portfolio",
   description: "Built with Next.js and Chakra UI",
+  icons: {
+    icon: "/art-gallery/art-image-3.png",
+    shortcut: "/art-gallery/art-image-5.png",
+    apple: "/art-gallery/art-image-5.png",
+  },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
