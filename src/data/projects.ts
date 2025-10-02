@@ -43,7 +43,7 @@ export const projects: Project[] = [
     description: "A memory-based game inspired by the classic Simon game.",
     image: "/images/simon-game.png",
     github: "https://github.com/shuuta1005/simon-game",
-    live: "https://shuuta1005.github.io/simon-game/",
+    // live: "https://shuuta1005.github.io/simon-game/",
     category: "Game",
     tech: ["HTML", "CSS", "JavaScript"],
     features: [
