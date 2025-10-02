@@ -20,6 +20,22 @@ type Props = {
 };
 
 export default function ProjectCard({ project }: Props) {
+  // Decide what the image should link to
+  const imageLink = project.live || project.github || null;
+
+  const ImageContent = (
+    <Image
+      src={project.image}
+      alt={project.title}
+      objectFit="cover"
+      w="100%"
+      h="200px"
+      transition="transform 0.4s ease"
+      _hover={{ transform: "scale(1.05)" }}
+      cursor={imageLink ? "pointer" : "default"}
+    />
+  );
+
   return (
     <Box
       borderWidth="1px"
@@ -33,35 +49,17 @@ export default function ProjectCard({ project }: Props) {
         shadow: "2xl",
       }}
     >
-      {/* Wrap image in a link if live exists */}
-      {project.live ? (
+      {imageLink ? (
         <a
-          href={project.live}
+          href={imageLink}
           target="_blank"
           rel="noopener noreferrer"
           style={{ display: "block" }}
         >
-          <Image
-            src={project.image}
-            alt={project.title}
-            objectFit="cover"
-            w="100%"
-            h="200px"
-            transition="transform 0.4s ease"
-            _hover={{ transform: "scale(1.05)" }}
-            cursor="pointer"
-          />
+          {ImageContent}
         </a>
       ) : (
-        <Image
-          src={project.image}
-          alt={project.title}
-          objectFit="cover"
-          w="100%"
-          h="200px"
-          transition="transform 0.4s ease"
-          _hover={{ transform: "scale(1.05)" }}
-        />
+        ImageContent
       )}
 
       <Box p={5}>
