@@ -236,9 +236,9 @@ export const artGallery = [
   {
     src: "/art-gallery/art-image-14.png",
   },
-  {
-    src: "/art-gallery/art-image-15.png",
-  },
+  // {
+  //   src: "/art-gallery/art-image-15.png",
+  // },
   {
     src: "/art-gallery/art-image-16.png",
   },
