@@ -242,18 +242,18 @@ export const artGallery = [
   {
     src: "/art-gallery/art-image-16.png",
   },
-  // {
-  //   src: "/art-gallery/art-image-17.png",
-  // },
-  // {
-  //   src: "/art-gallery/art-image-18.png",
-  // },
-  // {
-  //   src: "/art-gallery/art-image-19.png",
-  // },
-  // {
-  //   src: "/art-gallery/art-image-20.png",
-  // },
+  {
+    src: "/art-gallery/art-image-17.png",
+  },
+  {
+    src: "/art-gallery/art-image-18.png",
+  },
+  {
+    src: "/art-gallery/art-image-19.png",
+  },
+  {
+    src: "/art-gallery/art-image-20.png",
+  },
 ];
 
 export const travelGallery = [

@@ -37,7 +37,29 @@ export const projects: Project[] = [
     ],
     features: [],
   },
-
+  {
+    title: "Online Store (WordPress)",
+    description:
+      "A custom WordPress site for BrahFotos, built to showcase and sell surf-inspired digital and physical products. The store features responsive pages with category-linked image grids, a custom footer with social links, and WooCommerce integration for product management. Built using the Sydney theme and Elementor, the site is under construction locally with LocalWP.",
+    image: "/images/shara-shop.jpg",
+    category: "Frontend",
+    tech: [
+      "WordPress",
+      "WooCommerce",
+      "Elementor",
+      "LocalWP",
+      "Sydney Theme",
+      "CSS",
+      "PHP",
+    ],
+    features: [
+      "Responsive landing page with category navigation",
+      "Custom footer with Socials section",
+      "WooCommerce setup for product pages",
+      "Theme customization and layout tweaks",
+      "LocalWP development and troubleshooting",
+    ],
+  },
   {
     title: "Simon Game",
     description: "A memory-based game inspired by the classic Simon game.",
